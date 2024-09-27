@@ -18,39 +18,45 @@ Configuration
 
 All configuration keys are set within the `MunkiReport` domain. See include mobile configuration profile for an example how to use a profile to configure this module. 
 
-###`speedtest_enabled`
+`speedtest_enabled`
 
 By default the module is disabled. To enable the module, set `speedtest_enabled` on the clients with: 
-```sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_enabled -bool True
+```
+sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_enabled -bool True
 ```
 
-###`speedtest_get_isp`
+`speedtest_get_isp`
 By default the module does not get ISP information from Speedtest.net's API ([https://www.speedtest.net/speedtest-config.php](https://www.speedtest.net/speedtest-config.php)). No data about your Mac is sent to Speedtest.net. 
 
 To get information about the ISP, set `speedtest_get_isp` on the clients with: 
-```sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_get_isp -bool True
 ```
-###`speedtest_get_location`
+sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_get_isp -bool True
+```
+`speedtest_get_location`
 By default the module does not collect and report on the IP's reported latitude and longitude coordinates from Speedtest.net's API ([https://www.speedtest.net/speedtest-config.php](https://www.speedtest.net/speedtest-config.php)). No data about your Mac is sent to Speedtest.net. Enabling this requires enabling `speedtest_get_isp`.
 
 To get the IP's reported latitude and longitude, set `speedtest_get_location` on the clients with: 
-```sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_get_location -bool True
 ```
-###`speedtest_weekly_run`
+sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_get_location -bool True
+```
+`speedtest_weekly_run`
 By default the module does not retest a network. To enable retesting networks once a week, set `speedtest_weekly_run` on the clients with: 
-```sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_weekly_run -bool True
+```
+sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_weekly_run -bool True
 ```
 
-###`speedtest_current_only`
+`speedtest_current_only` 
 By default the module shows the last 5 networks it has run a speedtest on. If this is set on MacBooks or Macs that change networks often it could trigger them to retest the network speeds with every new network change.
 
 To show only the current network, set `speedtest_current_only` on the clients with: 
-```sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_current_only -bool True
+```
+sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_current_only -bool True
 ```
 
-###`speedtest_debug_enabled`
+`speedtest_debug_enabled`
 By default the module does not show debug information on the client. To show the debug information and logic, set `speedtest_debug_enabled` on the clients with: 
-```sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_debug_enabled -bool True
+```
+sudo defaults write /Library/Preferences/MunkiReport.plist speedtest_debug_enabled -bool True
 ```
 
 Table Schema
