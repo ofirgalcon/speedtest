@@ -1,0 +1,27 @@
+i18n_title: speedtest.report
+js_link: module/speedtest/js/speedtest
+not_null_column: speedtest.dl_throughput
+table:
+  - column: machine.computer_name
+    i18n_header: listing.computername
+    formatter: clientDetail
+    tab_link: speedtest-tab
+  - column: reportdata.serial_number
+    i18n_header: serial
+  - {i18n_header: username, column: reportdata.long_username}
+  - {i18n_header: speedtest.base_rtt, column: speedtest.base_rtt}
+  - {i18n_header: speedtest.dl_throughput, column: speedtest.dl_throughput, formatter: format_speedtest_byte_rate}
+  - {i18n_header: speedtest.dl_bytes_transferred, column: speedtest.dl_bytes_transferred, formatter: format_speedtest_byte_size}
+  - {i18n_header: speedtest.ul_throughput, column: speedtest.ul_throughput, formatter: format_speedtest_byte_rate}
+  - {i18n_header: speedtest.ul_bytes_transferred, column: speedtest.ul_bytes_transferred, formatter: format_speedtest_byte_size}
+  - {i18n_header: speedtest.dl_responsiveness, column: speedtest.dl_responsiveness}
+  - {i18n_header: speedtest.ul_responsiveness, column: speedtest.ul_responsiveness}
+  - {i18n_header: speedtest.ipv4ip, column: speedtest.ipv4ip}
+  - {i18n_header: speedtest.latest, column: speedtest.latest, formatter: binaryYesNo}
+  - {i18n_header: speedtest.external_ip_short, column: speedtest.external_ip_isp}
+  - {i18n_header: speedtest.interface_name, column: speedtest.interface_name}
+  - {i18n_header: speedtest.test_time, column: speedtest.end_time, formatter: timestampToMoment}
+  - {i18n_header: speedtest.isp, column: speedtest.isp}
+  - {i18n_header: speedtest.iteration, column: speedtest.iteration}
+  - {i18n_header: speedtest.country, column: speedtest.country}
+  - {i18n_header: speedtest.test_endpoint, column: speedtest.test_endpoint}

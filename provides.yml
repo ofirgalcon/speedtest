@@ -1,0 +1,9 @@
+client_tabs:
+    speedtest-tab:
+        view: speedtest_tab
+        i18n: speedtest.speedtest
+        badge: speedtest-cnt
+listings:
+    speedtest:
+        view: speedtest_listing
+        i18n: speedtest.speedtest

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>MunkiReport</string>
+			<key>PayloadIdentifier</key>
+			<string>MunkiReport.58808579-BFC2-48D8-8F09-5D5B12FB76E1</string>
+			<key>PayloadType</key>
+			<string>MunkiReport</string>
+			<key>PayloadUUID</key>
+			<string>58808579-BFC2-48D8-8F09-5D5B12FB76E1</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>speedtest_current_only</key>
+			<false/>
+			<key>speedtest_debug_enabled</key>
+			<false/>
+			<key>speedtest_enabled</key>
+			<true/>
+			<key>speedtest_get_isp</key>
+			<true/>
+			<key>speedtest_get_location</key>
+			<true/>
+			<key>speedtest_weekly_run</key>
+			<true/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Sample payload for how to configure the MunkiReport speedtest module.</string>
+	<key>PayloadDisplayName</key>
+	<string>MunkiReport Speedtest Module</string>
+	<key>PayloadIdentifier</key>
+	<string>com.github.munkireport.speedtest.1451779E-6E39-429B-A2A7-101A45D36ADC</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>1451779E-6E39-429B-A2A7-101A45D36ADC</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
